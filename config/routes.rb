@@ -1,4 +1,10 @@
 Rails.application.routes.draw do
+  resources :ratings
+
+  resources :boxes
+
+  resources :user_profiles
+
   devise_for :users
   get 'home/index'
 
